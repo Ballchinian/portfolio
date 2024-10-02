@@ -1,0 +1,315 @@
+body {
+    background-color: #051c3d;
+}
+
+a {
+    text-decoration: none;
+}
+
+div#start{
+    position: absolute;
+    top:0;
+}
+
+/**!!Start of vision one**/
+div#visionOne {
+    margin-top: 20vw;
+}
+
+/**!!Start of vision one**/
+
+/**!!Start of section of header!!**/
+
+/**Container for list of url's**/
+header {
+    transition: 0.3s; /* Smooth transition for moving header */
+    position: fixed;
+    top:0vw;
+    right: 10vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+header div#header {
+    background-color: #12233d;
+}
+
+/**Text of url's**/
+header ul li a{
+    
+    color: #a6c0b7;
+    font-size: 2.0vw;
+    margin-right: 3.0vw;  
+    
+    
+}
+
+/**Text of url's when hovered**/
+header ul li a:hover {
+    
+    color: #218ac5;
+    font-size: 2.0vw;
+    margin-right: 3.0vw;  
+    transition:1s;
+}
+header ul {
+    display: inline-block;
+}
+
+/**List of url's**/
+header ul li {
+    top:40vw;
+    display: inline-block;
+    font-family: "Nerko One", cursive;
+
+    
+
+}
+
+
+
+
+/**Gives 'cv' its own special box with custom padding**/
+header ul li#cv_highlighted a{
+    padding:2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 1vw;
+    border-color: #218ac5;
+    border-style: outset;
+    border-radius: 40%;
+    border-width: 1vw;
+}
+
+header ul li#cv_highlighted a:hover{
+    padding:2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-left: 1vw;
+    border-style: inset;
+    border-radius: 40%;
+    border-width: 1vw;
+}
+
+
+
+
+
+/**!!End of section of header!!**/
+
+/**!!Start of FunSun!!**/
+
+
+div#logo img{
+    position: absolute;
+    top:2vw;
+    left:30px;
+    width:15vw;
+    height:15vw;
+}
+
+div#logo svg{
+    position: absolute;
+    top:2vw;
+    left:30px;
+    width:21vw;
+    height:21vw;
+}
+
+
+div#logo svg {
+    z-index: 2;
+}
+
+
+textPath a {
+    z-index: 0;
+    font-size: 30px; /* Adjust as needed */
+    fill: #eab021;
+    font-family: "Nerko One", cursive;
+}
+
+textPath a:hover {
+    z-index: 0;
+    font-size: 30px; /* Adjust as needed */
+    fill: #eb2189;
+    font-family: "Nerko One", cursive;
+    transition:1s;
+}
+/**!!End of FunSun!!**/
+
+
+
+/**!!Start of section of introduction!!**/
+
+div#introduction {
+    margin-top: 23vw;
+    margin-bottom: 20vw;
+}
+
+/**Ethan Newiss**/
+div#introduction h1 {
+    text-align: center;
+    margin-bottom:0px;
+    color: #eab021;
+    font-size: 7vw;
+    font-family: "Nerko One", cursive;
+    
+}
+
+/**Box that contains inter/compe w/ lists**/
+div#introCaption {
+    display: flex; 
+    justify-content: center;    
+    gap: 6vw;               
+}
+
+
+/**Interested/Competent in/**/
+div#introduction div#introCaption h2 {
+    color: #eb2189;
+    font-family: "Nerko One", cursive;
+    font-size: 4vw;
+    margin:1px;
+}
+
+/**List for inter/comp**/
+div#introduction ul li {
+    color: #a6c0b7;
+    font-family: "Nerko One", cursive;
+    font-size: 1vw;
+    padding-left: 0px;
+}
+
+
+/**Box for lists**/
+div#introduction ul {
+    text-align: center;
+    padding-left: 0px;
+    display: block;
+}
+
+div#introduction li::marker {
+    content: "";
+}
+
+div#codeImages img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+}
+
+/**!!End of section of introduction!!**/
+
+/**!!Start of section of About me!!**/
+
+div#aboutMe {
+
+    display: flex;
+    justify-content: center;
+    width:60%;
+    margin:0 15vw;
+    margin-top: 30vw;
+    
+}
+div#aboutMe p{
+    padding:2vw;
+    word-spacing: 0.6vw;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    color: #a6c0b7;
+}
+
+div#aboutMe img {
+    border-style:solid;
+    border-color:#051c3d;
+    border-radius:1vw;
+    width:12vw;
+    margin-left:100px;
+}
+
+
+div#aboutMe li {
+    font-family: "Nerko One", cursive;
+    display:inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content:end;
+}
+div#aboutMe ul li.even {
+    color:#eb2189;
+
+}
+
+div#aboutMe ul li.odd {
+    color:#eab021;
+}
+/**!!End of section of About me!!**/
+
+
+/**!!Start of section of Skills**/
+div#skills {
+    display: flex;
+    justify-content: center;
+    width:60%;
+    margin:0 20%;
+    margin-top: 30vw;
+    font-family: "Nerko One", cursive;
+    color:#a6c0b7;
+    
+}
+
+div#skills h3 {
+    display: flex;
+    justify-content: center;
+}
+
+/**Gives some life to <a> elements**/
+div#skills h3 a{
+    text-decoration:none;
+}
+
+div#skills h3.even a{
+    color:#eb2189;
+}
+
+div#skills h3.odd a{
+    color:#eab021;
+}
+
+div#skills h3 a:hover{
+    text-decoration:underline;
+
+}
+
+
+div#skills img {
+    width:12vw;
+    height: 12vw; 
+    border-color: #12233d;
+    border-width: 1px;
+    object-fit: scale-down;
+}
+
+div#skills ol {
+    display: flex;
+    list-style-type: none;
+
+}
+
+div#skills ol li {
+    margin:25px;
+    width:12vw;
+}
+
+div#skills ul#codewars {
+    display: flex;
+    justify-content: center;
+}
+
+div#skills ul#codewars li {
+    margin-left:10px;
+    margin-right: 10px;
+}
+/**!!End of section of skills**/
