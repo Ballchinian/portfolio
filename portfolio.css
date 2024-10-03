@@ -248,8 +248,8 @@ div#aboutMe ul li.odd {
 /**!!End of section of About me!!**/
 
 
-/**!!Start of section of Skills**/
-div#skills {
+/**!!Start of section of projects**/
+div#projects {
     display: flex;
     justify-content: center;
     width:60%;
@@ -260,31 +260,31 @@ div#skills {
     
 }
 
-div#skills h3 {
+div#projects h3 {
     display: flex;
     justify-content: center;
 }
 
 /**Gives some life to <a> elements**/
-div#skills h3 a{
+div#projects h3 a{
     text-decoration:none;
 }
 
-div#skills h3.even a{
+div#projects h3.even a{
     color:#eb2189;
 }
 
-div#skills h3.odd a{
+div#projects h3.odd a{
     color:#eab021;
 }
 
-div#skills h3 a:hover{
+div#projects h3 a:hover{
     text-decoration:underline;
 
 }
 
 
-div#skills img {
+div#projects img {
     width:12vw;
     height: 12vw; 
     border-color: #12233d;
@@ -292,24 +292,25 @@ div#skills img {
     object-fit: scale-down;
 }
 
-div#skills ol {
+div#projects ol {
     display: flex;
     list-style-type: none;
 
 }
 
-div#skills ol li {
+div#projects ol li {
     margin:25px;
     width:12vw;
 }
 
-div#skills ul#codewars {
+div#projects ul#codewars {
     display: flex;
     justify-content: center;
 }
 
-div#skills ul#codewars li {
+div#projects ul#codewars li {
     margin-left:10px;
     margin-right: 10px;
+    list-style-type: none;
 }
-/**!!End of section of skills**/
+/**!!End of section of projects**/
