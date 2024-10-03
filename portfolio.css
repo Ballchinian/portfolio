@@ -265,7 +265,7 @@ div#projects h3 {
     justify-content: center;
 }
 
-/**Gives some life to <a> elements**/
+/**Gives some life to a elements**/
 div#projects h3 a{
     text-decoration:none;
 }
