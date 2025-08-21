@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Portfolio of Ethan Newiss – software engineer skilled in Python, JavaScript, and web development.">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#start">Start</a></li>
+      <li><a href="#aboutMe">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li id="cv_highlighted"><a href="https://docs.google.com/document/d/1CQp5CApyHOTp70NrTtgSeIAvOunVLe-k_ZdpfKZP-qo/edit?usp=sharing" target="_blank">CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- Logo + links -->
+  <div id="logo">
+    <svg viewBox="0 0 500 500">
+      <path id="curve" fill="transparent" d="M -79.00,287.00 C 288.00,679.00 610.00,137.00 277.00,-76.00" />
+      <text x="100%" text-anchor="middle" dominant-baseline="middle">
+        <textPath xlink:href="#curve">
+          <tspan><a href="https://www.codewars.com/users/Ballchinian/stats">About</a></tspan>
+          <tspan dx="60"><a href="https://github.com/Ballchinian">Github</a></tspan>
+          <tspan dx="60"><a href="https://www.codewars.com/users/Ballchinian">Codewars</a></tspan>
+          <tspan dx="60"><a href="#contact">Contact</a></tspan>
+        </textPath>
+      </text>
+    </svg>
+    <img src="images/sun.png" alt="Sun logo">
+  </div>
+
+  <!-- Intro -->
+  <section id="introduction">
+    <h1>Ethan Newiss</h1>
+    <div id="introCaption">
+      <div>
+        <h2>Interested in</h2>
+        <ul>
+          <li>Software Engineering</li>
+          <li>Web Development</li>
+          <li>AI</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Most Competent</h2>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="aboutMe">
+    <div class="achievements-container">
+      <ul class="achievements-top">
+        <li>Completed Codecademy Full-stack Engineer</li>
+        <li>Top 10% in Codewars</li>
+        <li>2 years of coding experience</li>
+      </ul>
+      <p class="center-paragraph">
+        Hello! I'm Ethan Newiss, a versatile coder specializing in interactive web applications and solving complex coding challenges. 
+        My expertise lies in Python and JavaScript, but I’m eager to master any new language. With a Higher Diploma in Mathematics and 
+        top grades (A*A*A) in Maths, Further Maths, and Physics, I bring strong analytical skills to every project. 
+        I’m open to job opportunities that align with my interests and am excited about continuous learning and growth.
+      </p>
+      <ul class="achievements-bottom">
+        <li>Awarded Tennis Player</li>
+        <li>Top 0.1% in Rocket League</li>
+        <li>Rubik's Cube under 1 minute</li>
+      </ul>
+    </div>
+    <img src="images/ethan.png" alt="Portrait of Ethan Newiss">
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ol>
+      <li>
+        <h3><a href="https://dndcal.netlify.app" target="_blank">DnD Calculator (P2E)</a></h3>
+        <img src="images/p2e.jpg" alt="DnD Calculator Screenshot" loading="lazy">
+        <p>Helps players explore complicated battle situations using JavaScript for dynamic calculations.</p>
+      </li>
+      <li>
+        <h3><a href="https://ballchinianavalability.netlify.app" target="_blank">Availability</a></h3>
+        <img src="images/avalibility.jpg" alt="Availability Project Screenshot" loading="lazy">
+        <p>Updates a list of up to 5 months in real time while sending results to a secure backend.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/Ballchinian/tiktoktoe" target="_blank">Python 101</a></h3>
+        <img src="images/theFarmerWasReplaced.jpg" alt="Python 101 Screenshot" loading="lazy">
+        <p>Includes an auto sorter, maze solver, and optimizer using Python-like logic.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/Ballchinian/sudokuSolver" target="_blank">Sudoku Solver</a></h3>
+        <img src="images/sodokuSolver.jpg" alt="Sudoku Solver Screenshot" loading="lazy">
+        <p>Scans line by line and box by box to solve most Sudoku puzzles.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/Ballchinian/dijkstra" target="_blank">Dijkstra’s Algorithm</a></h3>
+        <img src="images/dij.jpg" alt="Dijkstra Project Screenshot" loading="lazy">
+        <p>Implements Dijkstra’s algorithm to compute the shortest weighted path to a destination.</p>
+      </li>
+      <li>
+        <h3><a href="https://e-commercelive.netlify.app" target="_blank">E-Commerce</a></h3>
+        <img src="images/E-commerce.jpg" alt="E-commerce Project Screenshot" loading="lazy">
+        <p>React + Bootstrap frontend, Railway backend with SQL, secure JWT authentication.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:ethantnewiss@hotmail.co.uk">ethantnewiss@hotmail.co.uk</a></p>
+    <p>📞 <a href="tel:+447397651227">+44 7397 651227</a></p>
+  </section>
+
+
+  <script>
+    let lastScrollY = window.scrollY;
+    const nav = document.querySelector("nav");
+
+    window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+        // scrolling down → hide header
+        nav.classList.add("hidden");
+    } else {
+        // scrolling up → show header
+        nav.classList.remove("hidden");
+    }
+    lastScrollY = window.scrollY;
+    });
+  </script>
+</body>
+</html>

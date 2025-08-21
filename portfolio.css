@@ -1,0 +1,241 @@
+body {
+        background-color: #051c3d;
+        overflow-x: hidden;
+        margin: 0;
+        font-family: "Nerko One", cursive;
+        scroll-behavior: smooth;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    /* Sticky header */
+    nav {
+        position: sticky;
+        top: 40px;
+        right:40px;
+        background-color: #12233d;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out;
+        width: fit-content;    
+        max-width: 70%;        
+        margin-left: auto;     
+        border-bottom-left-radius: 40px; 
+        padding:25px;
+    }
+
+    /* Hide effect */
+    nav.hidden {
+        transform: translateY(-400%);
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2vw;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    nav li a {
+        color: #a6c0b7;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        transition: color 0.3s ease;
+    }
+    nav li a:hover {
+        color: #218ac5;
+    }
+    nav li#cv_highlighted a {
+        padding: 0.5rem 1rem;
+        border: 3px solid #218ac5;
+        border-radius: 50px;
+    }
+    nav li#cv_highlighted a:hover {
+        background-color: #218ac5;
+        color: #fff;
+    }
+
+    /* Logo (sun + curved links) */
+ 
+    #logo img {
+        position: absolute; 
+        top:2vw; 
+        left:30px; 
+        width:15vw; 
+        height:15vw;
+    }
+    #logo svg{ 
+        position: absolute; 
+        top:2vw; 
+        left:30px; 
+        width:21vw; 
+        height:21vw; }
+    textPath a {
+        z-index: 0; 
+        font-size: 30px; /* Adjust as needed */ 
+        fill: #eab021; 
+        font-family: "Nerko One", cursive;
+    }
+    textPath a:hover { 
+        z-index: 0; 
+        font-size: 30px; /* Adjust as needed */ 
+        fill: #eb2189; 
+        font-family: "Nerko One", cursive; 
+        transition:1s; }
+
+    /* Introduction */
+    #introduction {
+        text-align: center;
+        margin: 8rem 0;
+    }
+    #introduction h1 {
+        color: #eab021;
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        margin-bottom: 1rem;
+    }
+    #introCaption {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+    #introCaption h2 {
+        color: #eb2189;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        margin-bottom: 0.5rem;
+    }
+    #introCaption ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #introCaption li {
+        color: #a6c0b7;
+        font-size: clamp(0.9rem, 1vw, 1.2rem);
+    }
+
+    /* About Me */
+    #aboutMe {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 80%;
+        margin: 5rem auto;
+        color: #a6c0b7;
+    }
+    #aboutMe p {
+        flex: 1 1 300px;
+        font-size: clamp(1rem, 1.2vw, 1.3rem);
+        line-height: 1.6;
+    }
+
+    .achievements-top,
+    .achievements-bottom {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 20px 0;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .achievements-top li,
+    .achievements-bottom li {
+        flex: 1;
+        text-align: center;
+    }
+
+    .center-paragraph {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.1rem;
+    }
+
+
+
+    #aboutMe img {
+        /**Create the gap between the image and the other parts of the project**/
+        margin: 80px;
+        flex: 0 1 250px;
+        border-radius: 10px;
+        object-fit: contain;
+        max-height: 400px;
+    }
+    #aboutMe ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+    }
+    #aboutMe li {
+        font-size: 1rem;
+        color: #218ac5;
+    }
+
+    /* Projects */
+    #projects {
+        width: 80%;
+        margin: 5rem auto;
+    }
+    #projects h2 {
+        text-align: center;
+        color: #eab021;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 2rem;
+    }
+    #projects ol {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #projects li {
+        background-color: #12233d;
+        border-radius: 10px;
+        padding: 1rem;
+        transition: transform 0.3s ease;
+    }
+    #projects li:hover {
+        transform: scale(1.05);
+    }
+    #projects h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    #projects h3 a {
+        color: #eb2189;
+    }
+    #projects li:nth-child(even) h3 a {
+        color: #eab021;
+    }
+    #projects img {
+        display: block;
+        margin: 0 auto 1rem;
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    #projects p {
+        font-size: 0.95rem;
+        color: #a6c0b7;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    /* Contact */
+    #contact {
+        text-align: center;
+        margin: 5rem auto;
+        color: #a6c0b7;
+    }
+    #contact a {
+        color: #218ac5;
+        font-size: 1.2rem;
+    }
