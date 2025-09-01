@@ -10,7 +10,7 @@ import {
 } from "../styles";
 
 export default function Skills() {
-  const skills = ["Python", "JavaScript", "SQL", "React", "Node.js", "Git"];
+  const skills = ["Python", "JavaScript", "SQL", "React", "jQuery", "Bootstrap","C#","java"];
 
   return (
     <section id="skills" className={sectionWrapper}>
