@@ -1,20 +1,10 @@
-import { motion } from "framer-motion";
-import { 
-    sectionWrapper, 
-    sectionTitle, 
-    gridWrapper, 
-    cardBase, 
-    cardHover, 
-    cardPaddingSmall, 
-    cardText,
+import MotionCards from "./animations/motionCards";
+import {
+    sectionWrapper,
+    sectionTitle,
+    gridWrapper,
     linkBaseInbetween
 } from "../styles";
-const achievements = [
-    { desc: ["Top 10% on Codewars"], link: ["https://www.codewars.com/users/Ballchinian"] },
-    { desc: ["Completed Codecademy Full-stack Engineer"], link: ["https://www.codecademy.com/profiles/JetFusion10/certificates/ffd0f42cce1a44e9a0108b365047a0a6"] },
-    { desc: ["3 Years of coding experience"], link: ["https://github.com/Ballchinian?tab=overview&from=2026-06-01&to=2026-06-09"] },
-    { desc: ["Higher diploma in mathematics"], link: [] }
-  ];
 
 export default function Skills() {
     const skills = [
@@ -34,41 +24,21 @@ export default function Skills() {
 
         <div className={gridWrapper}>
             {skills.map((skill, index) => (
-            <motion.div
-                key={index}
-                initial={{
-                    opacity: 0,
-                    x: index % 2 === 0 ? -100 : 100,
-                }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                }}
-                viewport={{ once: true, amount: 0.2 }}
-                className={`
-                    ${cardBase}
-                    ${cardHover}
-                    ${cardPaddingSmall}
-                    ${cardText}
-                `}
-            >
-                {skill.name && (
-                <p>
-                    {skill.name}
-                </p>
-                )}
-                {skill.link && (
-                <a href={skill.link} target="_blank" rel="noopener noreferrer" className={linkBaseInbetween}>
-                    Certificate →
-                </a>
-                )}
-                {skill.link === undefined && (
-                <p className="text-gray-500 italic">
-                    Project experience
-                </p>
-                )}
-            </motion.div>
+                <MotionCards key={index} index={index}>
+                    {skill.name && (
+                        <p>{skill.name}</p>
+                    )}
+                    {skill.link && (
+                        <a href={skill.link} target="_blank" rel="noopener noreferrer" className={linkBaseInbetween} aria-label={`View ${skill.name} certificate (opens in a new tab)`}>
+                            Certificate →
+                        </a>
+                    )}
+                    {skill.link === undefined && (
+                        <p className="text-gray-500 italic">
+                            Project experience
+                        </p>
+                    )}
+                </MotionCards>
             ))}
         </div>
         </section>

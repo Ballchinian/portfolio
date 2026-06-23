@@ -1,4 +1,4 @@
-//!!Section Wrappers!!
+//---Section Wrappers---
 
 //Section with dark background + vertical padding
 export const sectionWrapper = `
@@ -54,7 +54,7 @@ export const gridWrapper = `
 `;
 
 
-// !!Cards!!
+// ---Cards---
 
 //Default card container (background, padding, hover effects)
 export const cardBase = `
@@ -69,15 +69,14 @@ export const cardBase = `
 
 export const cardBaseReverse = `
     bg-[#0d1b2a]
-    rounded-lg 
+    rounded-lg
     p-3
     shadow-md
     transition
     hover:bg-[#1b263b]
-    hover:text-[#0d1b2a]
 `
 
-//Hover effects only (can be added separately)
+//Hover effects only
 export const cardHover = `
     hover:bg-cyan-400 
     hover:text-[#0d1b2a]
@@ -118,7 +117,7 @@ export const cardLink = `
 `;
 
 
-//!!Buttons & Links!!
+//---Buttons & Links---
 
 //Primary button style
 export const buttonBase = `

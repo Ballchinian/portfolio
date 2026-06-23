@@ -1,4 +1,4 @@
-import { sectionBase, headingBase, paragraphBase, buttonBase } from "../styles";
+import { sectionBase, headingBase, paragraphBase } from "../styles";
 
 export default function Contact() {
     return (

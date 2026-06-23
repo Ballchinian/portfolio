@@ -10,13 +10,13 @@ import Contact from "./components/Contact";
 export default function App() {
     return (
         <div>
-        <Navbar />
-        <Intro />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Achievements />
-        <Contact />
+            <Navbar />
+            <Intro />
+            <AboutMe />
+            <Skills />
+            <Projects />
+            <Achievements />
+            <Contact />
         </div>
     );
 }
