@@ -18,14 +18,14 @@ export default function Projects() {
         {
             title: "Availability",
             description:
-                "Friends schedules packed into an easy to sort date organiser. Discord integration which works with a bot",
+                "Aggregates availability data from multiple people, offering seamless navigation via web and Discord integrations.",
             link: "https://availabilityspreadsheet.netlify.app/",
             codeLink: "https://github.com/Ballchinian/Availability"
         },
         {
             title: "E-Commerce Website",
             description:
-                "A shopping website inspired by the feel of Amazon, first attempt at a full-stack website ",
+                "Full-stack shopping application with secure authentication, advanced product filtering, search capabilities, and persistent shopping carts.",
             link: "https://e-commercelive.netlify.app/login",
             codeLink: "https://github.com/Ballchinian/E-Commerce"
         },
