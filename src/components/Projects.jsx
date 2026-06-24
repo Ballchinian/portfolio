@@ -4,16 +4,23 @@ export default function Projects() {
         {
             title: "Pathfinder 2e Battle Calculator",
             description:
-                "A large scale project to simulate a p2e combat encounter. Character, action, and combat logic with a battle log.",
+                "Simulates ttrpg combat encounters. Analytical tooling with informative feedback.",
             link: "https://pathfindercalc.netlify.app/",
             codeLink: "https://github.com/Ballchinian/pathfinderCalculator",
         },
         {
             title: "League Matchmaker",
             description:
-                "Refined matchmaking algorithm for LoL, internal mmr system with matchmaking logic with a clean interface",
+                "Multipurpose matchmaking for LoL unique per discord server. Glicko mmr system, minimum difference partitioning, and fully scalable",
             link: "https://lolmatchmaker.netlify.app",
             codeLink: "https://github.com/Ballchinian/LoLMatchMaker"
+        },
+        {
+            title: "Availability",
+            description:
+                "Friends schedules packed into an easy to sort date organiser. Discord integration which works with a bot",
+            link: "https://availabilityspreadsheet.netlify.app/",
+            codeLink: "https://github.com/Ballchinian/Availability"
         },
         {
             title: "E-Commerce Website",
@@ -28,12 +35,6 @@ export default function Projects() {
                 "A simple Reddit client app built with React and the Reddit API. Browse subreddits, view posts, and read comments.",
             link: "https://redditappfrontend.netlify.app/",
             codeLink: "https://github.com/Ballchinian/RedditApp"
-        },
-        {
-            title: "Sudoku Solver",
-            description:
-                "Starts with a sudoku problem and methodically scans line for line, box for box, solving most sudoku problems.",
-            codeLink: "https://github.com/Ballchinian/sudokuSolver"
         },
         {
             title: "Dijkstra’s Algorithm",
