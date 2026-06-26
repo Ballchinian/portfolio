@@ -5,8 +5,8 @@ export default function Projects() {
             title: "Pathfinder 2e Battle Calculator",
             description:
                 "Simulates ttrpg combat encounters. Analytical tooling with informative feedback.",
-            link: "https://pathfindercalc.netlify.app/",
-            codeLink: "https://github.com/Ballchinian/pathfinderCalculator",
+            link: "https://ttrpgcalc.netlify.app/",
+            codeLink: "https://github.com/Ballchinian/TTRPGCalc",
         },
         {
             title: "League Matchmaker",
