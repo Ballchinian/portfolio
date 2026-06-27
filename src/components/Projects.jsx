@@ -2,7 +2,7 @@ import { sectionBase, headingBase, cardBaseReverse, linkBase } from "../styles";
 export default function Projects() {
     const projects = [
         {
-            title: "Pathfinder 2e Battle Calculator",
+            title: "TTRPG Calculator",
             description:
                 "Simulates ttrpg combat encounters. Analytical tooling with informative feedback.",
             link: "https://ttrpgcalc.netlify.app/",
@@ -23,14 +23,14 @@ export default function Projects() {
             codeLink: "https://github.com/Ballchinian/Availability"
         },
         {
-            title: "E-Commerce Website",
+            title: "E-Commerce",
             description:
                 "Full-stack shopping application with secure authentication, advanced product filtering, search capabilities, and persistent shopping carts.",
             link: "https://e-commercelive.netlify.app/login",
             codeLink: "https://github.com/Ballchinian/E-Commerce"
         },
         {
-            title: "Reddit Client App",
+            title: "Reddit Client",
             description:
                 "A simple Reddit client app built with React and the Reddit API. Browse subreddits, view posts, and read comments.",
             link: "https://redditappfrontend.netlify.app/",
