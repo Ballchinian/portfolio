@@ -35,14 +35,7 @@ export default function Projects() {
                 "A simple Reddit client app built with React and the Reddit API. Browse subreddits, view posts, and read comments.",
             link: "https://redditappfrontend.netlify.app/",
             codeLink: "https://github.com/Ballchinian/RedditApp"
-        },
-        {
-            title: "Dijkstra’s Algorithm",
-            description:
-                "Implements Dijkstra’s algorithm to find the least weight path between nodes in a graph.",
-            codeLink: "https://github.com/Ballchinian/dijkstra"
-        },
-
+        }
     ];
 
     return (
