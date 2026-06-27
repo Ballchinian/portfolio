@@ -9,7 +9,7 @@ import {
 export default function Achievements() {
     const achievements = [
         { desc: "Top 10% on Codewars", link: "https://www.codewars.com/users/Ballchinian" },
-        { desc: "Completed Codecademy Full-stack Engineer", link: "https://www.codecademy.com/profiles/JetFusion10/certificates/ffd0f42cce1a44e9a0108b365047a0a6" },
+        { desc: "Codecademy Full-stack Engineer certified", link: "https://www.codecademy.com/profiles/JetFusion10/certificates/ffd0f42cce1a44e9a0108b365047a0a6" },
         { desc: "3 Years of coding experience", link: "https://github.com/Ballchinian" },
         { desc: "Higher diploma in mathematics", link: null }
     ];
